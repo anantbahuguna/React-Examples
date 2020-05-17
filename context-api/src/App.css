@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 2rem;
+  
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: black;
+  padding: 0.7rem 2rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+
+ .navbar ul {
+    display: flex;
+  }
+.navbar li {
+  list-style: none;
+  margin: 0 1rem;
+  padding: 0.5rem;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+  grid-gap: 1rem;
+}
+
+hr {
+  border: 1px solid black;
+}
+.card {
+  position: grid;
+  margin: 2rem auto;
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-image {
+  position: relative;
+    max-height: 220px;
+    overflow: hidden;
+  padding-top: 75.09%
+}
+
+img {
+  display:block;
+  position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+      width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.card-content {
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  margin: 1.5rem auto;
+}
